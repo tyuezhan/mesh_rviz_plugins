@@ -32,6 +32,9 @@ wstool init
 wstool merge mesh_rviz_plugins/install/mesh_rviz_plugins.rosinstall
 wstool update
 
+# If using ubuntu 20.04, do the following
+git apply ubuntu_focal.patch
+
 # Compile code
 catkin build
 
