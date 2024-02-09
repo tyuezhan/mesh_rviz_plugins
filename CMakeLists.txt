@@ -1,11 +1,13 @@
 cmake_minimum_required(VERSION 2.8.3)
+set(CMAKE_CXX_STANDARD 14)
+
 project(mesh_rviz_plugins)
 
 find_package(catkin_simple REQUIRED)
 catkin_simple(ALL_DEPS_REQUIRED)
 
 set(CMAKE_MACOSX_RPATH 0)
-add_definitions(-std=c++11 -Wall)
+add_definitions(-std=c++14 -Wall)
 
 ## System dependencies are found with CMake's conventions
 find_package(PkgConfig REQUIRED)
